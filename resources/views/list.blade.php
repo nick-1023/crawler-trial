@@ -65,8 +65,8 @@
             </div>
             <div class="row justify-content-center page mt-1 p-5">
                 <div class="col-2">
-                    <a class="btn btn-info" href="{{ $pages->prev }}">上一頁</a>
-                    <a class="btn btn-info" href="{{ $pages->next}}">下一頁</a>
+                    <a class="btn btn-info" href="{{ $pages->prev ?? 'javascript:;' }}">上一頁</a>
+                    <a class="btn btn-info" href="{{ $pages->next ?? 'javascript:;'}}">下一頁</a>
                 </div>
             </div>
         </div>
